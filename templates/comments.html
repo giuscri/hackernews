@@ -1,6 +1,14 @@
 <div class="comments">
+    <div class="back">
+        <a href="#/"><span>&lt; Back</span></a>
+    </div>
     <h3>{{title}}</h3>
-    <ul>
-        <li ng-repeat="comment in comments">{{comment.text}} ~ <em>{{comment.by}}</em></li>
+    <ul class="list">
+        <li ng-repeat="comment in comments">
+            {{comment.text}}
+            <p>
+                <em>{{comment.by}}</em>
+            </p>
+        </li>
     </ul>
 </div>
