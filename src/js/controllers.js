@@ -21,7 +21,7 @@ hackernewsControllers.controller("MainCtrl", ["$scope", "$http", function ($scop
         })
         .error(function (data, status, headers, config) {
             console.err(data);
-        })
+        });
 }]);
 hackernewsControllers.controller("DetailCtrl", ["$scope", "$http", "$routeParams", function ($scope, $http, $routeParams) {
     $http.get(["https://hacker-news.firebaseio.com/v0/item/", $routeParams.id, ".json"].join(""))
