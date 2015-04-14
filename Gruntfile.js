@@ -38,7 +38,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-contrib-htmlmin");
     grunt.registerTask("default", ["jshint", "uglify", "cssmin", "htmlmin"]);
 };
-// The quickest solution I've found for linking
-// libraries from Grunt ...
+// The quickest solution I've found
+// for copying dependencies from Grunt
 var shell = require("shelljs");
 shell.exec("mkdir build; cd build; cp -r ../src/bower_components .; cd ..");
