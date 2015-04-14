@@ -30,20 +30,13 @@ module.exports = function (grunt) {
                     "build/templates/comments.html": ["src/templates/comments.html"]
                 }
             }
-        },
-        "gh-pages": {
-            options: {
-                base: "build"
-            },
-            src: ["**"]
         }
     });
     grunt.loadNpmTasks("grunt-contrib-jshint");
     grunt.loadNpmTasks("grunt-contrib-uglify");
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-contrib-htmlmin");
-    grunt.loadNpmTasks("grunt-gh-pages");
-    grunt.registerTask("default", ["jshint", "uglify", "cssmin", "htmlmin", "gh-pages"]);
+    grunt.registerTask("default", ["jshint", "uglify", "cssmin", "htmlmin"]);
 };
 // The quickest solution I've found for linking
 // libraries from Grunt ...
