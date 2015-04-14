@@ -1,1 +1,1 @@
-<div class="comments"><div class="back"><a href="#/"><span>&lt; Back</span></a></div><h3>{{title}}</h3><ul class="list"><li ng-repeat="comment in comments">{{comment.text}}<p><em>{{comment.by}}</em></p></li></ul></div>
+<div class="comments"><div class="back"><a href="#/"><span>&lt; Back</span></a></div><h3>{{title}}</h3><ul class="list"><li ng-repeat="comment in comments"><p ng-bind-html="comment.text"></p><p></p><p><em>{{comment.by}}</em></p><p></p></li></ul></div>
