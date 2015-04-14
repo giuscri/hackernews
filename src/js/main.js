@@ -1,4 +1,4 @@
-var hackernews = angular.module("hackernews", ["ngRoute", "hackernewsControllers"]);
+var hackernews = angular.module("hackernews", ["ngRoute", "hackernewsControllers", "ngSanitize"]);
 hackernews.config(["$routeProvider", function ($routeProvider) {
     $routeProvider
         .when("/", {

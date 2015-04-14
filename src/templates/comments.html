@@ -5,10 +5,10 @@
     <h3>{{title}}</h3>
     <ul class="list">
         <li ng-repeat="comment in comments">
-            {{comment.text}}
+            <p ng-bind-html="comment.text"><p>
             <p>
                 <em>{{comment.by}}</em>
-            </p>
+            <p>
         </li>
     </ul>
 </div>
