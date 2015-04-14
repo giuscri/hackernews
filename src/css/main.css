@@ -3,6 +3,7 @@ html {
     background: orange;
 }
 div.main {
+    margin-top: 4em;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
