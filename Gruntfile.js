@@ -48,4 +48,4 @@ module.exports = function (grunt) {
 // The quickest solution I've found for linking
 // libraries from Grunt ...
 var shell = require("shelljs");
-shell.exec("mkdir build; cd build; ln -s ../src/bower_components .; cd ..");
+shell.exec("mkdir build; cd build; cp -r ../src/bower_components .; cd ..");
