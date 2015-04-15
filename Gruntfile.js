@@ -41,4 +41,4 @@ module.exports = function (grunt) {
 // The quickest solution I've found
 // for copying dependencies from Grunt
 var shell = require("shelljs");
-shell.exec("mkdir build; cd build; cp -r ../src/bower_components .; cd ..");
+shell.exec("mkdir build; cd build; cp -r ../src/bower_components .; cp ../src/manifest.webapp .; cd ..");

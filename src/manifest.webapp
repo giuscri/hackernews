@@ -1,0 +1,14 @@
+{
+  "version": "0.0",
+  "name": "Hacker News reader",
+  "description": "A simpler Hacker news reader",
+  "launch_path": "http://giuscri.github.io/hackernews",
+  "icons": {
+    "128": "/icons/hackernews.128.png"
+  },
+  "developer": {
+    "name": "Giuseppe Crinò",
+    "url": "http://github.com/giuscri/hackernews"
+  },
+  "default_locale": "en"
+}
